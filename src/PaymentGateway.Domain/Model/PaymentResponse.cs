@@ -9,7 +9,8 @@ namespace PaymentGateway.Domain.Model
     public class PaymentResponse
     {
         public Guid Id { get; set; }
-        public bool IsSucsess { get; set; }
+        public string Status { get; set; }
+        public string ErrorMessage{ get; set; }
         public PaymentResponse()
         {
 
