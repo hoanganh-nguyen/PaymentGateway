@@ -24,7 +24,10 @@ This sample will be shortly deploy into AWS with the infrastructure-as-code writ
 
 # Run it locally
 To run it locally, you may need Visual Studio 2022 or simply [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) 
-- Check-out or download it locally
+
+## Command Line
+
+ Check-out or download it locally
 - Go to the **/src** folder
 - Restore nuget dependecies
  `dotnet restore PaymentGateway.sln`
@@ -33,6 +36,16 @@ To run it locally, you may need Visual Studio 2022 or simply [.NET 6 SDK](https:
  - Run it
  `cd src\PaymentGateway.Api
  dotnet run`
+
+## Using Docker
+If you want to use docker (without install .NET 6 SDK), you need to have Docker installed locally. The dockerfile are available in the /src folder. Here are the basic command to build & run it in docker
+
+- Go to /src folder
+- Build
+- `docker build -t paymentgateway .`
+- Run it
+- `docker run paymentgateway`
+You could find the additional option to run a docker here: https://docs.docker.com/engine/reference/commandline/cli/
 
    
 
