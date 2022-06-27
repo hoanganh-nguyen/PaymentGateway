@@ -16,6 +16,7 @@ This is a API-based application simulating the payment gateway in the processing
 - [FluentValidation](https://fluentvalidation.net/)
 - [xUnit](https://xunit.net/)
 - [NSubstitute](https://nsubstitute.github.io/)
+- Swagger
 ## CICD
 - GitHub Actions
 ## Infrastructure
@@ -37,8 +38,10 @@ To run it locally, you may need Visual Studio 2022 or simply [.NET 6 SDK](https:
  `cd src\PaymentGateway.Api
  dotnet run`
 
+Web API exposed  locally via the port 7186: https://localhost:7186/swagger/index.html
+
 ## Using Docker
-If you want to use docker (without install .NET 6 SDK), you need to have Docker installed locally. The dockerfile are available in the /src folder. Here are the basic command to build & run it in docker
+If you want to use docker (without install .NET 6 SDK), you need to have Docker installed locally. The dockerfile are available in the /src folder. Here are the basic command to build & run it in docker, by default the application exposed over 80, 443
 
 - Go to /src folder
 - Build
@@ -47,6 +50,6 @@ If you want to use docker (without install .NET 6 SDK), you need to have Docker 
 - `docker run paymentgateway`
 You could find the additional option to run a docker here: https://docs.docker.com/engine/reference/commandline/cli/
 
-   
+
 
 
