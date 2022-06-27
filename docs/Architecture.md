@@ -73,6 +73,27 @@ Advantages:
 
 ![enter image description here](https://github.com/hoanganh-nguyen/PaymentGateway/blob/main/assets/ECS.png)
 
+**Advantages**
+- Good performance with warm state
+- Better development experience when developer could build, test locally before deploy.
+- Startup time around 60-90s 
+**Inconvenients:** 
+- Take more startup when there is a sudden spike of requests
+- Take longer to scale up
+
+
 ### Option 2: API Gateway + Lambda functions
 
 ![enter image description here](https://github.com/hoanganh-nguyen/PaymentGateway/blob/main/assets/API%20Gateway.png)
+
+**Advatages:**
+
+- Almost no initial cost
+- Easy to scale up
+
+**Inconvenients:**
+- The initial startup take 5seconds
+- Limit to 15minutes
+- Limit CPU/Memory
+
+**Recommendation: In this case, using ALB with Fargate is better suited**
