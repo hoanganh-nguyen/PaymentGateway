@@ -71,5 +71,8 @@ Advantages:
 ## Option for Compute
 ### Option 1: Application Load Balancer + ECS/EKS	
 
+![enter image description here](https://github.com/hoanganh-nguyen/PaymentGateway/blob/main/assets/ECS.png)
+
 ### Option 2: API Gateway + Lambda functions
 
+![enter image description here](https://github.com/hoanganh-nguyen/PaymentGateway/blob/main/assets/API%20Gateway.png)
