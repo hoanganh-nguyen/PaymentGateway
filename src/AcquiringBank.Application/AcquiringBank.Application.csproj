@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PaymentGateway.Models\PaymentGateway.Models.csproj" />
+    <ProjectReference Include="..\AcquiringBank.Domain\AcquiringBank.Domain.csproj" />
   </ItemGroup>
 
 </Project>

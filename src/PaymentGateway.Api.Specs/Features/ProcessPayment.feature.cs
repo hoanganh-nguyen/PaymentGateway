@@ -81,16 +81,16 @@ namespace PaymentGateway.Api.Specs.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Bad Request")]
+        [Xunit.SkippableFactAttribute(DisplayName="Bad Request - Amount, Currency")]
         [Xunit.TraitAttribute("FeatureTitle", "ProcessPayment")]
-        [Xunit.TraitAttribute("Description", "Bad Request")]
+        [Xunit.TraitAttribute("Description", "Bad Request - Amount, Currency")]
         [Xunit.TraitAttribute("Category", "ProcessPayment")]
-        public virtual void BadRequest()
+        public virtual void BadRequest_AmountCurrency()
         {
             string[] tagsOfScenario = new string[] {
                     "ProcessPayment"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bad Request", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bad Request - Amount, Currency", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -118,7 +118,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("submitting a payment request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
- testRunner.Then("payment gateway returns a unsuccessfule response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("payment gateway returns a unsuccessful response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 9
  testRunner.And("the error code is bad request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -127,16 +127,16 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Bad Credit Card")]
+        [Xunit.SkippableFactAttribute(DisplayName="Bad Request - Bad Credit Card")]
         [Xunit.TraitAttribute("FeatureTitle", "ProcessPayment")]
-        [Xunit.TraitAttribute("Description", "Bad Credit Card")]
+        [Xunit.TraitAttribute("Description", "Bad Request - Bad Credit Card")]
         [Xunit.TraitAttribute("Category", "ProcessPayment")]
-        public virtual void BadCreditCard()
+        public virtual void BadRequest_BadCreditCard()
         {
             string[] tagsOfScenario = new string[] {
                     "ProcessPayment"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bad Credit Card", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bad Request - Bad Credit Card", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 13
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -164,10 +164,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("submitting a payment request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 16
- testRunner.Then("payment gateway returns a unsuccessfule response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("payment gateway returns a unsuccessful response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 17
- testRunner.And("the error code is unprocessable entity", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the error code is bad request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -183,7 +183,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "ProcessPayment"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valid payment request", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 22
+#line 21
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -203,14 +203,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 23
+#line 22
  testRunner.Given("Shopper provides a valid payment request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 24
+#line 23
  testRunner.When("submitting a payment request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 25
- testRunner.Then("payment gateway returns a successfule response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 24
+ testRunner.Then("payment gateway returns a successful response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
